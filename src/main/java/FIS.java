@@ -12,14 +12,6 @@ public class FIS {
         String line = new String(data,"utf-8").trim();
         System.out.println(line);
 
-        FileInputStream fis = new FileInputStream("raf.dat");
-        FileOutputStream fos = new FileOutputStream("fos.txt");
-        int len;
-
-        byte[] data = new byte[1024*10];
-        while((len = fis.read(data))!=-1){
-            fos.write(data,0,len);
-        }
 
 
     }
